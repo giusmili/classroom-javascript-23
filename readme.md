@@ -1,4 +1,4 @@
-# Cours Javascript - 2023
+# <font color="orange">Cours Javascript - 2023</font>
 ## Installation de Babel
 ```cmd
 vérifier la version npm
