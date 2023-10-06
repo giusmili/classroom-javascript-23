@@ -14,7 +14,7 @@ Nota bene : pour installer le CLI faire d'abord npm init pour le package.json
 ## Exemple de création d'Objet en JS
 
 > #### <i class="fa fa-gear fa-spin fa-2x" style="color: gray"></i> Développement
-> 
+ 
 ```js
 
 // Your code here!
