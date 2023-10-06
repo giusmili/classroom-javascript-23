@@ -10,9 +10,12 @@ Cibler le répertoire "SRC" et commande :npm run build
 
 Nota bene : pour installer le CLI faire d'abord npm init pour le package.json
 ```
-> Afficher la page : [index](https://giusmili.github.io/cours_js_SIO_23/)
+> Afficher la page : [index] (https://giusmili.github.io/cours_js_SIO_23/)
 
 ## Exemple de création d'Objet en JS
+
+> #### <i class="fa fa-gear fa-spin fa-2x" style="color: gray"></i> Développement
+> 
 ```js
 
 // Your code here!
