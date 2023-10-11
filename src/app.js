@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded",(e)=>{ /* DOM */
     /* affichage sur le document html */
    
     let users = document.createElement("ul")
-    section_el.appendChild(users) /* dernier enfant */
-
+    section_el.prepend(users) /* dernier enfant */
     console.log(section_el.children)
+
     for(data in le_nom_du_tab){
 
         console.log(`${data} : ${le_nom_du_tab[data]}`)
@@ -73,23 +73,37 @@ document.addEventListener("DOMContentLoaded",(e)=>{ /* DOM */
     const element_title = document.querySelector("header h1")
         element_title.innerText += ` ${elements}`
 
-    
-
-    
 
     /* les tableaux et les fonctions */
-    let x = 0;
+    const build = function(){
+        console.log(this)
+    }
+    /**
+     * 
+     * @param {*} el 
+     * @returns 
+     */
+   let elments = (el)=>{
+        return el.innerHTML = `${compte++}`
+   }
+   elments(document.querySelector("span"))
+  /**
+   * 
+   * @param {*} msg 
+   * @param {*} prenom 
+   * @returns 
+   */
+   const version = (msg, prenom)=>{
+        return `${msg} : ${prenom}`
+   }
+    console.log(version("Hello","Bob"))
+/* event */
     btn.addEventListener("click",()=>{
-        if(x==0){
-            x = 1;
-            console.log(x)
+        /* console.log(btn.tagName) */
+        elments(document.querySelector("span"))
+        if(compte > 1){
+            btn.setAttribute("disabled","true")
         }
-        else{
-            x = 0;
-            console.log(x)
-        }
-        
-    })
 
-    
+    })
 })
