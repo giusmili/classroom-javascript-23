@@ -93,10 +93,7 @@ document.addEventListener("DOMContentLoaded",(e)=>{ /* DOM */
    * @param {*} prenom 
    * @returns 
    */
-   const version = (msg, prenom)=>{
-        return `${msg} : ${prenom}`
-   }
-    console.log(version("Hello","Bob"))
+  
 /* event */
     btn.addEventListener("click",()=>{
         /* console.log(btn.tagName) */
